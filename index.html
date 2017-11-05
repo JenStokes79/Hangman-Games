@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Hangman Game</title>
 </head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--style css-->
+<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+<!--links googlefonts-->
+<link href="https://fonts.googleapis.com/css?family=Farsan|Monofett" rel="stylesheet">
+
 <body>
+<script type="text/javascript">
+
+	var div = document.getElementById("textDiv"); 
+	div.textContent = "my text";
+    var text = div.textContent;  
+	var GameOne = "Airplane"
+
+	displayLetter = function(){
+		
+		}
+
+	document.onkeyup = function(event) {
+		var keyPressed = event.key;
+
+		if (keyPressed === "a"){
+			displayLetter()
+
+		}
+		}
+
+
+
+</script>
+
+
+
+
+
+<!--Main game content-->
+	<div class="container">
+		<div class="row">
+			<div class="col=md-8">
+				<h1>WELCOME TO<BR>TRAVEL<BR>HANGMAN</h1>
+
+				<P>
+					Press any key to start the game!
+				</P>
+				<div id = "textDiv">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-med-8">
+				<p>Take A Guess:</p>
+				
+			</div>
+			
+		</div>
+	</div>
 
 </body>
 </html>

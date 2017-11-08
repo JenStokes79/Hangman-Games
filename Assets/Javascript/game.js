@@ -12,7 +12,7 @@
 
       //DOM
     var targetDiv = document.getElementById("underscore")
-    document.getElementById("incorrectGuess")
+    var secondaryDiv = document.getElementById("incorrectGuess")
     document.getElementById('underscore').innerHTML = genUnderscores();
 
  	
@@ -55,10 +55,10 @@ console.log(keyword)
 }
  	else {
 
- 	// inccorect guess goes to wrong letter array
+ 	// incorrect guess goes to wrong letter array
  	wrongGuess.push(keyword);
  	document.getElementById('incorrectGuess'[0]);
-  innerHTML = underScores.join(' ');
+  secondaryDiv.innerHTML = wrongGuess;
 
   console.log(incorrectGuess)
  	}

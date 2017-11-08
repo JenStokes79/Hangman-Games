@@ -10,3 +10,16 @@ p {
 	font-size: 30px;
 	color: #188fad;
 }
+#underscore {
+	text-align: center;
+	color: #188fad;
+}
+
+#incorrectGuess {
+	text-align: center;
+	color: #188fad;
+}
+#underscore {
+	font-size: 20px;
+	color: #188fad;
+}

@@ -7,6 +7,8 @@
       var underScores = [];
       var correctGuess = [];
       var wrongGuess = [];
+      var winCounter = 0;
+
     
 
 
@@ -41,16 +43,18 @@
  	correctGuess.push(keyword); 
   
 
- 	//change unerscore to correct letter
+ 	//change underscore to correct letter
  	underScores[newGame.indexOf(keyword)] = keyword;
  	document.getElementById('underscore'[0]);
-  targetDiv.innerHTML = underScores.join("");
-console.log(keyword)
+  targetDiv.innerHTML = underScores.join(' ');
 
 
- 	if (underScores.join(' ') === newGame) {
+
+ 	if (correctGuess === newGame){
  		alert('You Win!');
- 		}
+    winCounter++;
+ 		} 
+    console.log()
  	
 }
  	else {
@@ -60,7 +64,6 @@ console.log(keyword)
  	document.getElementById('incorrectGuess'[0]);
   secondaryDiv.innerHTML = wrongGuess;
 
-  console.log(incorrectGuess)
  	}
 
 });
